@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 2.2
+branches:
+  only:
+    - master
+script:
+ - dotnet build ./src/MyApp/MyApp.csproj
+ - dotnet test ./tests/UnitTests/UnitTests.csproj
